@@ -261,8 +261,18 @@ body {
 
 .skill-category h3 {
   color: #2d3748;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 18px;
+}
+
+.skill-category-hint {
+  color: #718096;
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .skill-tag {
@@ -275,11 +285,62 @@ body {
   font-size: 14px;
   border: 2px solid #1e40af;
   transition: all 0.3s;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.skill-tag::after {
+  content: "▼";
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 6px;
+  opacity: 0.6;
+  transition: transform 0.3s;
 }
 
 .skill-tag:hover {
   background: #1e40af;
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(30, 64, 175, 0.3);
+}
+
+.skill-tag.active {
+  background: #1e40af;
+  color: white;
+}
+
+.skill-tag.active::after {
+  transform: rotate(180deg);
+}
+
+.skill-example {
+  display: none;
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  border-left: 3px solid #1e40af;
+  border-radius: 5px;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.skill-example.active {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .cert-item {

@@ -46,7 +46,7 @@
 
     <!-- Canonical URL -->
     <link rel="stylesheet" href="./styles.css" />
-
+    <script src="./script.js" defer="true"></script>
     <!-- Structured Data (JSON-LD) for Rich Snippets -->
     <script type="application/ld+json">
       {
@@ -388,25 +388,150 @@
           <div class="skills-grid">
             <div class="skill-category">
               <h3>Technical Skills</h3>
+              <p class="skill-category-hint">
+                Click any skill to see an example
+              </p>
               <div>
-                <span class="skill-tag">Windows OS</span>
-                <span class="skill-tag">Mac OS</span>
-                <span class="skill-tag">Azure</span>
-                <span class="skill-tag">Active Directory</span>
-                <span class="skill-tag">ZoHo Desk</span>
-                <span class="skill-tag">Hardware Troubleshooting</span>
-                <span class="skill-tag">Software Troubleshooting</span>
+                <span class="skill-tag" onclick="toggleSkill('windows')"
+                  >Windows OS</span
+                >
+                <div id="windows" class="skill-example">
+                  At Pavilion Business Services, I provided daily support for
+                  Windows 10/11 desktops, troubleshooting system errors,
+                  managing user profiles, and configuring Group Policy settings
+                  to ensure optimal performance for 10+ users across the
+                  organization.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('macos')"
+                  >Mac OS</span
+                >
+                <div id="macos" class="skill-example">
+                  I supported Mac users by troubleshooting software
+                  compatibility issues, managing system preferences, and
+                  providing guidance on macOS-specific applications, ensuring
+                  seamless integration with our Windows-based infrastructure.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('azure')"
+                  >Azure</span
+                >
+                <div id="azure" class="skill-example">
+                  Currently pursuing AZ-104 certification, I work with Azure
+                  Active Directory for user management, configure cloud
+                  resources, and support Microsoft 365 cloud services
+                  integration for enterprise environments.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('activedirectory')"
+                  >Active Directory</span
+                >
+                <div id="activedirectory" class="skill-example">
+                  I managed user accounts, security groups, and access
+                  permissions in Active Directory, ensuring proper
+                  authentication and authorization across the corporate network
+                  while maintaining security best practices.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('zoho')"
+                  >ZoHo Desk</span
+                >
+                <div id="zoho" class="skill-example">
+                  At Pavilion Business Services, I utilized ZoHo Desk to track,
+                  prioritize, and resolve support tickets, achieving a 73%
+                  resolution rate within 24 hours while maintaining detailed
+                  documentation for future reference.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('hardware')"
+                  >Hardware Troubleshooting</span
+                >
+                <div id="hardware" class="skill-example">
+                  As a freelance IT Technician, I built and configured 10+
+                  custom PCs, diagnosed hardware failures including RAM,
+                  storage, and motherboard issues, and performed component
+                  replacements to restore full functionality.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('software')"
+                  >Software Troubleshooting</span
+                >
+                <div id="software" class="skill-example">
+                  I resolved complex software issues including application
+                  crashes, driver conflicts, and performance bottlenecks across
+                  Microsoft 365, ZoHo CRM, and various business applications,
+                  ensuring minimal downtime for end users.
+                </div>
               </div>
             </div>
             <div class="skill-category">
               <h3>Professional Skills</h3>
+              <p class="skill-category-hint">
+                Click any skill to see an example
+              </p>
               <div>
-                <span class="skill-tag">User Training</span>
-                <span class="skill-tag">Problem Solving</span>
-                <span class="skill-tag">Teamwork</span>
-                <span class="skill-tag">Customer Service</span>
-                <span class="skill-tag">Leadership</span>
-                <span class="skill-tag">Attention to Detail</span>
+                <span class="skill-tag" onclick="toggleSkill('training')"
+                  >User Training</span
+                >
+                <div id="training" class="skill-example">
+                  I developed and delivered comprehensive training materials for
+                  Microsoft 365 applications and ZoHo CRM, conducting hands-on
+                  sessions that improved user proficiency and reduced support
+                  ticket volume by enabling self-service problem-solving.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('problemsolving')"
+                  >Problem Solving</span
+                >
+                <div id="problemsolving" class="skill-example">
+                  I consistently diagnosed and resolved complex technical issues
+                  by analyzing symptoms, researching solutions, and implementing
+                  fixes efficiently. This analytical approach helped me achieve
+                  a 73% same-day resolution rate at Pavilion Business Services.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('teamwork')"
+                  >Teamwork</span
+                >
+                <div id="teamwork" class="skill-example">
+                  As Project Coordinator at Woldring Consulting, I collaborated
+                  with technical teams across departments, facilitated bi-weekly
+                  meetings, and ensured clear communication to keep the hospital
+                  renovation project on track and aligned with stakeholder
+                  expectations.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('customerservice')"
+                  >Customer Service</span
+                >
+                <div id="customerservice" class="skill-example">
+                  I provided prompt, professional technical support through
+                  email, phone, and in-person channels, actively listening to
+                  user concerns and communicating technical solutions in
+                  accessible language to ensure positive support experiences.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('leadership')"
+                  >Leadership</span
+                >
+                <div id="leadership" class="skill-example">
+                  I took initiative in creating training documentation and
+                  establishing best practices for cybersecurity at Pavilion
+                  Business Services, guiding team members through proper
+                  security protocols and leading by example in technical
+                  problem-solving.
+                </div>
+
+                <span class="skill-tag" onclick="toggleSkill('attention')"
+                  >Attention to Detail</span
+                >
+                <div id="attention" class="skill-example">
+                  I maintained meticulous meeting minutes for project updates
+                  and created detailed IT device inventories for a major
+                  hospital renovation, ensuring accuracy in documentation that
+                  technical teams relied on for critical infrastructure planning
+                  decisions.
+                </div>
               </div>
             </div>
           </div>
