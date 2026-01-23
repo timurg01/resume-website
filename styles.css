@@ -248,8 +248,12 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.skill-category:last-child {
+  grid-column: 1 / -1;
 }
 
 .skill-category {
@@ -386,6 +390,14 @@ body {
     width: 120px;
     height: 120px;
     font-size: 50px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category:last-child {
+    grid-column: 1;
   }
 }
 
